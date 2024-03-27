@@ -45,6 +45,7 @@ ul, ol, menu{
 .todo-items{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .icon-item{

@@ -4,6 +4,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        newTask:'',
         todos:[
             {
                 text:'Fare la spesa',
@@ -36,6 +37,24 @@ const { createApp } = Vue
     methods:{
         removeTodo(todo,i){
             this.todos.splice(i,1)
+        },
+        addTask(){
+            console.log(this.newTask)
+            if(this.newTask !== ''){
+                this.newTask ={
+                    text: this.newTask,
+                    done: false,
+                }
+            }
+            this.todos.push(this.newTask)
+            this.newTask = '';
+        },
+        doit(todo){
+            if(todo.done === false){
+                todo.done = true;
+            }else{
+                todo.done = false;
+            }
         }
     }
  }).mount('#app')
