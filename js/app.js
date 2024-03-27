@@ -32,5 +32,10 @@ const { createApp } = Vue
         ]
 
       }
+    },
+    methods:{
+        removeTodo(todo,i){
+            this.todos.splice(i,1)
+        }
     }
  }).mount('#app')

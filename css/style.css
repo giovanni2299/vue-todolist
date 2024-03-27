@@ -33,6 +33,19 @@ ul, ol, menu{
     
 }
 
+.btn_add{
+    border: none;
+    margin-left: 20px;
+    border-radius:999px ;
+    padding: 5px 10px;
+}
+
+
+
+.todo-items{
+    display: flex;
+    justify-content: space-between;
+}
 
 .icon-item{
     margin-left: 5px;
