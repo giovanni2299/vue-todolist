@@ -31,7 +31,7 @@
                             v-for="(todo,i) in todos" 
                             >
                                 {{todo.text}}
-                                <a class="icon-item"  href="#"><i class="fa-solid fa-circle-xmark" @click="removeTodo(todo,i)"></i></a>
+                                <a class="icon-item"  href="#"><i class="fa-solid fa-circle-xmark" @click.stop="removeTodo(todo,i)"></i></a>
                             </li>
                         </ul>
                     </div>
